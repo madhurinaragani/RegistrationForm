@@ -1,4 +1,4 @@
-# RegistrationForm
+# Registration Form
 Simple Registration using HTML, CSS, Javascript
 
 
