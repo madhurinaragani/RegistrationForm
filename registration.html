@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>UCOP</title>
+
+<link rel='stylesheet' href='js-form-validation.css' type='text/css' />
+<script src="registration-validation.js"></script>
+</head>
+
+<body action="Events.html" onload="document.registration.First_Name.focus();" action="Events.html">
+  <div class="header">
+    <h1>University of California</h1>
+  <br><br><br><br>
+  </div>
+
+  <h4 align="center">Registration form for End of year party </h4>
+  Note: Only Employees are invited for this event
+  <br><br>Fields with * are mandatory
+
+
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="First_Name">First Name:<font color="red">*</font></label></li>
+<li><input type="text" name="First_Name" required/></li>
+
+<li><label for="Middle_Name">Middle Name:</label></li>
+<li><input type="text" name="Middle_Name" /></li>
+
+<li><label for="Last_Name">Last Name:<font color="red">*</font></label></li>
+<li><input type="text" name="Last_Name"/></li>
+
+<li><label for="email">Email:<font color="red">*</font></label></li>
+<li><input type="text" name="email" size="50"/></li>
+
+<li><label for="gender">Gender:<font color="red">*</font></label></li>
+<li><select name="gender" required>
+<option selected="" value="Gender">-------Gender---------</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Other">Other</option>
+</select></li>
+<li><label for="mealChoice">Meal Choice:<font color="red">*</font></label></li>
+<li><select name="mealChoice" required>
+<option selected="" value="Default">-------Meal Choice---------</option>
+<option value="Omnivore">Omnivore</option>
+<option value="Vegetarian">Vegetarian</option>
+<option value="Pescatarian">Pescatarian</option>
+<option value="Flexitarian">Flexitarian</option>
+<option value="Other">Other</option>
+</select></li>
+
+
+<li><label for="department">Department:<font color="red">*</font></label></li>
+<li><select name="department">
+<option selected="" value="Default">-------Department---------</option>
+<option value="ITS">ITS</option>
+<option value="HR">HR</option>
+<option value="Communication">Communication</option>
+</select></li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+</body>
+</html>
